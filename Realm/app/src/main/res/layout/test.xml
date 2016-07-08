@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20sp">
+
+    <TextView
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="start"
+        android:gravity="center"
+        android:background="@color/red"
+        android:text="Delete"/>
+
+    <TextView
+        android:id="@+id/edit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:background="@color/blue"
+        android:text="Edit"/>
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/white"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:weightSum="1">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/display_text"
+            android:text="123456789123"
+            android:textSize="25sp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_below="@+id/percentage" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:id="@+id/percentage"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/no_bunked"
+            android:text="111"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/secondary_text"
+            android:textIsSelectable="false"
+            android:textSize="30sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/button1"
+            android:layout_toStartOf="@+id/button1"
+            android:layout_weight="0.42" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:layout_marginLeft="30dp"
+            app:bootstrapBrand="regular"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/button1"
+            android:layout_toStartOf="@+id/button1"
+            android:layout_marginRight="20sp"
+            android:layout_weight="0.13" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton                          android:id="@+id/button1"
+            style="@style/wrapping_button"
+            app:bootstrapSize="lg"
+            android:layout_gravity="center"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"
+            app:bootstrapBrand="regular"
+            android:layout_weight="0.13" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

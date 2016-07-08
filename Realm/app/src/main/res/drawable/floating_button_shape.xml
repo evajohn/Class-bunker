@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <bitmap android:src="@drawable/drop_shadow_layer" />
+            </item>
+
+            <item android:left="9dp" android:top="9dp" android:right="9dp" android:bottom="9dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/floating_action_button_pressed_bg" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item>
+                <bitmap android:src="@drawable/drop_shadow_layer" />
+            </item>
+
+            <item android:left="9dp" android:top="9dp" android:right="9dp" android:bottom="9dp">
+                <shape android:shape="oval">
+                    <solid android:color="@color/floating_action_button_bg" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

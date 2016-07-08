@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <ScrollView
+        android:id="@+id/svMainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvActivatedPickers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Time"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/sampler_text_size" />
+
+            <RelativeLayout
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Start Time:"
+                    android:id="@+id/textView11"
+                    android:layout_weight="3.85"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignBottom="@+id/editText4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="bottom|right"
+                    android:layout_toStartOf="@+id/editText4"
+                    android:singleLine="true"
+                    android:lines="@android:integer/config_mediumAnimTime" />
+
+                <EditText
+                    android:layout_width="212dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText4"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Break Time :"
+                    android:id="@+id/textView12"
+                    android:layout_below="@+id/textView11"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignBottom="@+id/editText3"
+                    android:layout_toStartOf="@+id/editText3"
+                    android:gravity="bottom|center|right" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editText3"
+                    android:layout_below="@+id/editText4"
+                    android:layout_alignRight="@+id/editText4"
+                    android:layout_alignEnd="@+id/editText4"
+                    android:layout_alignLeft="@+id/editText4"
+                    android:layout_alignStart="@+id/editText4" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvPickerToShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Set Notification"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/sampler_text_size" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical"
+                android:animateLayoutChanges="true">
+
+                <RadioButton
+                    android:id="@+id/rbTimePicker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TimePicker"
+                    android:textSize="@dimen/sampler_text_size" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</FrameLayout>

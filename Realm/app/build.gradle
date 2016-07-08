@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '24'
+
+    defaultConfig {
+        applicationId "app.androidhive.info.realm"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        maven {
+            url "https://jitpack.io"
+        }
+    }
+    sourceSets { main { assets.srcDirs = ['src/main/assets', 'src/main/assets/'] } }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    compile 'com.github.stephentuso:welcome-android:v0.7.2'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:design:23.4.0'
+    compile 'com.github.jaredrummler:Material-Spinner:1.0.8'
+    compile 'io.realm:realm-android:0.82.1'
+    compile 'com.github.codevscolor:MaterialPreference:bdb71491af'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.nikhilpanju.recyclerviewenhanced:recyclerviewenhanced:1.0.0'
+    compile 'com.github.stephentuso:welcome-android:v0.7.2'
+    compile 'com.thesurix.gesturerecycler:gesture-recycler:1.3.1'
+    compile 'com.getbase:floatingactionbutton:1.10.1'
+    compile 'com.google.android.gms:play-services-appindexing:9.2.0'
+    compile 'com.google.android.gms:play-services:9.2.0'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.github.nisrulz:recyclerviewhelper:24.0.0'
+    compile 'com.beardedhen:androidbootstrap:2.3.0'
+    compile 'com.github.alex-townsend:SwipeOpenItemTouchHelper:1.2.1'
+    compile 'com.bartoszlipinski:recyclerviewheader2:2.0.1'
+    compile 'com.github.wdullaer:MaterialDateTimePicker:v2.3.0'
+    compile 'org.jetbrains:annotations-java5:15.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha3'
+    testCompile 'junit:junit:4.12'
+}

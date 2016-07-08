@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:title="Home"
+            android:id="@+id/home"
+            android:icon="@drawable/ic_menu_home"/>
+        <item
+            android:title="Dashboard"
+            android:id="@+id/dash"
+            android:icon="@drawable/ic_menu_chat_dashboard"/>
+
+        <item
+            android:title="Timetable"
+            android:id="@+id/timetable"
+            android:icon="@drawable/ic_menu_my_calendar"/>
+</group>
+    <group>
+
+        <item
+
+            android:title="Settings"
+            android:id="@+id/setting"
+            android:icon="@drawable/ic_setting_dark"/>
+        <item
+            android:title="Help"
+            android:id="@+id/tutorial"
+            android:icon="@drawable/ic_menu_help"/>
+
+    </group>
+</menu>

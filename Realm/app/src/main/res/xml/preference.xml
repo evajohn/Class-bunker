@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="General">
+<CheckBoxPreference android:title="Disable Ads"
+android:defaultValue="false"
+android:summary="This option if selected will Disable Ads."
+android:key="Add" ></CheckBoxPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="Notification">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notifications_new_message"
+            android:title="Enable Notification" />
+
+        <!-- Allows the user to choose a ringtone in the 'notification' category. -->
+        <!-- NOTE: This preference will be enabled only when the checkbox above is checked. -->
+        <!-- NOTE: RingtonePreference's summary should be set to its value by the activity code. -->
+
+        <CheckBoxPreference android:title="Enable Notifications"
+            android:defaultValue="false"
+            android:dependency="notifications_new_message"
+            android:summary="This option if selected will allow the application to Notify u if you have attendance lag."
+            android:key="applicationUpdates" ></CheckBoxPreference>
+
+        <CheckBoxPreference android:title="Alert"
+            android:defaultValue="false"
+            android:dependency="notifications_new_message"
+            android:summary="This option if selected will allow the application to Alert/Notify u if you have Important clss to attrend tomorrow."
+            android:key="Alert" ></CheckBoxPreference>
+    </PreferenceCategory>
+</PreferenceScreen>

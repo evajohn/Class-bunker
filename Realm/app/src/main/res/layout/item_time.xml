@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_books"
+    style="@style/AppTheme.Card.Margins"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_books_title"
+            android:layout_width="199dp"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="@color/secondary_text"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

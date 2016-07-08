@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#00BCD4</color>
+    <color name="background">#1109ea</color>
+
+    <color name="c_accent">#325C80</color>
+
+    <color name="c_primary">#2B4F6F</color>
+
+    <color name="c_primary_dark">#24435D</color>
+
+    <color name="primary">#03A9F4</color>
+    <color name="primary_dark">#0288D1</color>
+    <color name="primary_light">#B3E5FC</color>
+    <color name="accent">#00BCD4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+
+
+    <color name="floating_action_button_bg">#C2185B</color>
+    <color name="floating_action_button_pressed_bg">#212121</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="blue">#b205b2ec</color>
+    <color name="red">#e91e63</color>
+    <color name="half_black">#808080</color>
+    <color name="white">#fafafa</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="blue_background">#1976D2</color>
+    <color name="teal_background">#00796B</color>
+    <color name="orange_background">#F57C00</color>
+    <color name="red_background">#D32F2F</color>
+    <color name="purple_background">#7B1FA2</color>
+
+</resources>
